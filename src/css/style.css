@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;              /* jogar itens pro meio */
+    align-items: center;        /* jogar itens pro meio */
+    justify-content: center;   /* jogar itens pro meio */
+    height: 100vh;             /* ajuste centro da tela */
+    width: 100%;
+    background: linear-gradient(180deg, #fc5f16, #6119cc); /* cor fundo */
+}
+
+
+#stopwatch {
+    background-color: #262626;   /* fundo do relogio color */
+    padding: 2rem;             /* tamanho fundo relogio */
+    border-radius: 8px;       /* borda fundo */
+}
+
+#timer {
+    display: flex;              /* direcao relogio */
+    align-items: center;        /* direcao relogio */
+    justify-content: center;    /* direcao MEIO relogio */
+    background-color: #262626;
+    height: 250px;               /* altura relogio */
+    width: 250px;                /* tamanho margem dentro fundo */
+    border: 3px solid #fc5f16;  /* cor da bola redonda */
+    border-radius: 100%;      /* deixar margem redonda */
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;   /* cor relogio */
+    margin-bottom: 1.5rem;     /* reajuste nos numeros relogio */
+    padding: 4rem;
+}
+
+#actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;          /* largura botoes restar,play e flag */
+    height: 40px;         /* altura botoes restar,play e flag */
+    padding: .6rem;
+    font-size: 1rem;      /* tamanho icones botoes */  
+    border-radius: 4px;   /* borda botoes */
+    border: none;          /* estilo bordas botoes */  
+    background-color: #e0e7ff;  /* cor botoes */  
+    color: #262626;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+}
+
+#actions button:hover {    /* Animacao passar mouse em cima botoes */  
+    background-color: #c4b5fd;    /* cor da animacao */  
+}
+
+#marks-list {
+    display: flex;    /* espaçamento marcacoes */
+    flex-direction: column;      /* cronometro em forma de coluna */
+    gap: 0.7rem;       /* espaçamento marcacoes */
+    color: #ffffff;     /* cor marcacoes */
+}
+
+#marks-list p:first-child {
+    margin-top: 1.5rem;
+}
